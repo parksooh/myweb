@@ -1,0 +1,27 @@
+module.exports = function(app)
+{
+     app.get('/',function(req,res){
+        res.render('index.html')
+     });
+     app.get('/about',function(req,res){
+        res.render('about.html');
+    });
+    app.get('/package',function(req,res){
+       res.render('package.html');
+   });
+   app.get('/features',function(req,res){
+      res.render('features.html');
+  });
+  app.get('/blog',function(req,res){
+     res.render('blog.html');
+ });
+ app.get('/blog_details',function(req,res){
+    res.render('blog_details.html');
+});
+app.get('/elements',function(req,res){
+   res.render('elements.html');
+});
+app.get('/contact',function(req,res){
+   res.render('contact.html');
+});
+}
